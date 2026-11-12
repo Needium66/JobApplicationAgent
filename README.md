@@ -44,6 +44,6 @@ Leveraging the FCoT Framework:
 ------------------------------------------------------
 Implementing the 2 primary elements in FCoT Framework:
 ------------------------------------------------------
-o	Instruction Contract (IC): The agent’s immutable source of truth. It defines the agent’s mission, the deliverables it needs to execute and the guardrails and constraints not to breach.
-o	Recursive Loop: It defines the agent’s active thinking process- its reasoning. It forces the agent to follow through with established planned actions, carry them out and validate as it progresses against what IC dictates.
+-	Instruction Contract (IC): The agent’s immutable source of truth. It defines the agent’s mission, the deliverables it needs to execute and the guardrails and constraints not to breach.
+-   Recursive Loop: It defines the agent’s active thinking process- its reasoning. It forces the agent to follow through with established planned actions, carry them out and validate as it progresses against what IC dictates.
 
