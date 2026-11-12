@@ -46,4 +46,16 @@ Implementing the 2 primary elements in FCoT Framework:
 ------------------------------------------------------
 -	Instruction Contract (IC): The agent’s immutable source of truth. It defines the agent’s mission, the deliverables it needs to execute and the guardrails and constraints not to breach.
 -   Recursive Loop: It defines the agent’s active thinking process- its reasoning. It forces the agent to follow through with established planned actions, carry them out and validate as it progresses against what IC dictates.
+------------------------------------------------------------------------------------------------------------------------------------
+####
+-----------------------------
+Designing a Monolithic Agent:
+-----------------------------
+-	The logic, tools and state management will be centrally managed by a single agent. The job application agent is to follow its internal FCoT prompt, sequentially invoking the right tools at the right time to move
+-	Execute the job application workflow. The agent will be composed of 3 fundamental components below:
+
+1.	The FCoT Reasoning Core: The prompt will serve as its brain- it will serve as its reasoning
+2.	State Management: The Runner and SessionService in Google ADK (Orchestrator) will manage session and state- status of the job application agent historically
+3.	The Tools: Integration of tools that will enable the interaction of the job application agent externally.
+
 
