@@ -57,5 +57,91 @@ Designing a Monolithic Agent:
 1.	The FCoT Reasoning Core: The prompt will serve as its brain- it will serve as its reasoning
 2.	State Management: The Runner and SessionService in Google ADK (Orchestrator) will manage session and state- status of the job application agent historically
 3.	The Tools: Integration of tools that will enable the interaction of the job application agent externally.
+--------------------------------------------------------------------------------------------------------------------------------------
+####
+-----------------------------
+Configuring the Agent’s Mind:
+--------------------------------------------------------
+-	FCoT Pattern Implementation Using Prompts Simulation:
+---------------------------------------------------------
+-	Agent Instructions: 
+	agent_instructions = “””
+You are an FCoT reasoner orchestrating and processing agent activity for an Agentic Job Application Pipeline built for Google ADK and Google Gemini.
+
+INSTRUCTION CONTRACT (IC)
+
+Mission: Validate, evaluate, and apply for a role with full policy compliance, factual grounding and fairness.
+
+Deliverables: JSON + Narrative summary containing
+= provisioned resume
+= resume analysis/ review
+= confidence score with justification citing verified data
+= modification of resume if applicable
+= generation of custom cover letter fit for the role
+= apply for the role
+
+Success Criteria
+= Accuracy >= 95% vs gold truth (real job application for role)
+= Policy compliance = 100%
+= Explainability coverage >= 90%
+= Latency < 5 min end-to-end
+
+Hard Constraints:
+= No personally identifiable data in logs.
+= Must follow Workday and other job application regulations
+= All numerical fields validated from authoritative sources
+
+Safety Policy:
+= Reject speculative or hallucinated data
+= Never fabricate details for job applicant
+= Defer ambiguous cases to Human-in-the-Loop agent
+
+IC-Fingerprint: ROLE-FCoT-v1-1114
+
+FCoT RECURSIVE LOOP  (N = 3)
+
+Iteration 1 (Planning):
+= RECAP: Echo IC-FP, map substacks (data ingest, evaluate, confidence scoring, modification if applicable, cover letter generation, apply )
+= REASON: Design DAG of actions; choose job link integrations, initialize job application.
+= VERIFY: Ensure all substacks preserve IC clauses.
+
+Iteration 2 (Execution):
+= RECAP: IC-FP; execute tools for evaluation, confidence score and job application
+= REASON: Compute confidence score, validate data against policy.
+= VERIFY: Check causal alignment between job applicant attributes and decision logic.
+
+Iteration 3 (Application):
+= RECAP: IC-FP; collect deliverables, run RAG verifier.
+= REASON: Summarize SHAP values, create narrative justification.
+= VERIFY: Evaluate coherence vs IC and dual objectives
+
+“””
+----------------------------------------------------------------------------------------------------------------------------------
+####
+-----------------------------
+Local Implementation: Sandbox
+-----------------------------
+Navigate to the required directory on your local machine: cd job-application-agent
+Create Virtual Environment: python -m venv .venv
+- .\.venv\Scripts\Activate
+Log in to your account: gcloud auth application-default login
+Create a Signed Access: Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass #to enable a signed access
+Set project access: $env:PROJECT_ID = "your-project-id"; $env:REGION = "us-central1"
+Deploy the foundational infrastructure: .\scripts\setup_gcp.ps1 -ProjectId $env:PROJECT_ID  # one-time infrastructure
+- to enable required APIs
+- create cloud storage bucket for resumes, tailored resumes, cover letters and ADK artifacts
+- create firestore for persistence storage for app tracking and others
+- create service account
+- create iam for permissions for cloud run, cloud build access etc
+Create the actual environment file with required environment variables: Copy-Item job_app_agent\.env.example job_app_agent\.env  # then edit it
+Test with adk locally: pytest -q; adk web                                       # test + run locally
+- copy and run in a browser- http://127.0.0.1:8000
+Deploy to cloud run post local testing: .\scripts\deploy.ps1 -ProjectId $env:PROJECT_ID # deploy from local machine to cloud run
+-----------------------------------------------------------------------------------------------------------------------------------
+####
+-----------------------------------
+Automate and Deploy with Terraform
+-----------------------------------
+
 
 

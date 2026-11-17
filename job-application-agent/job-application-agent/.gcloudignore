@@ -1,0 +1,7 @@
+.venv/
+__pycache__/
+local_output/
+client_secret*.json
+token.json
+tests/
+.adk/
