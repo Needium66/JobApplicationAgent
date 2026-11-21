@@ -1,0 +1,26 @@
+id: site_reliability_engineer
+title: Site Reliability Engineer
+aliases: [sre, site reliability engineer, reliability engineer, production engineer]
+summary: >
+  Applies software engineering to operations: defines SLOs, reduces toil through automation, leads incident
+  response and capacity planning for large production systems.
+context: >
+  Measured by availability against SLOs, error budgets, MTTR and toil reduction. Requires real coding ability,
+  not only operations experience.
+levels:
+  junior: {min_years: 0, expectations: "Handles on-call with runbooks; automates small toil items."}
+  mid: {min_years: 3, expectations: "Owns SLOs for services, leads incidents and postmortems, builds automation in a general-purpose language."}
+  senior: {min_years: 6, expectations: "Sets reliability strategy across systems, capacity planning, influences architecture."}
+core_skills: ["SLO|SLI|error budget", "Incident response|on-call", "Observability|monitoring", "Linux", "Programming|Python|Go|Java", "Distributed systems", "Kubernetes|k8s", "Automation"]
+preferred_skills: ["Capacity planning", "Chaos engineering", "Postmortem|blameless postmortem", "Performance tuning", "Networking|TCP/IP|DNS", "Infrastructure as Code|Terraform"]
+tools: ["Prometheus", "Grafana", "OpenTelemetry", "PagerDuty", "Kubernetes|k8s", "Terraform", "Datadog", "ELK|Elasticsearch"]
+certifications: ["CKA|Certified Kubernetes Administrator", "Google Professional Cloud DevOps Engineer"]
+responsibilities:
+  - Define and track SLIs/SLOs and manage error budgets
+  - Lead incident response and blameless postmortems
+  - Automate operational toil with code
+  - Plan capacity and improve performance and resilience
+keywords: [reliability, availability, latency, SLO, toil, postmortem, on-call, resilience]
+evaluation_guidance:
+  - Require evidence of writing production code, not only scripts.
+  - SLO or error-budget experience is the strongest SRE-specific signal.

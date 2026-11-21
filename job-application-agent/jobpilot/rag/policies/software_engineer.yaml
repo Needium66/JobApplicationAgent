@@ -1,0 +1,25 @@
+id: software_engineer
+title: Software Engineer
+aliases: [software engineer, software developer, backend engineer, full stack engineer, full-stack developer, frontend engineer, swe]
+summary: >
+  Designs, builds, tests and maintains software: writes production code, reviews others' code, and owns
+  features from design through operation.
+context: >
+  Judged on code quality, delivery and system design appropriate to level. Language requirements vary by team.
+levels:
+  junior: {min_years: 0, expectations: "Implements well-scoped features with tests under guidance."}
+  mid: {min_years: 2, expectations: "Owns features and services end to end, contributes to design."}
+  senior: {min_years: 5, expectations: "Leads system design, sets technical direction, mentors."}
+core_skills: ["Programming|Python|Java|JavaScript|TypeScript|Go|C#|C++", "Data structures and algorithms|algorithms", "Testing|unit tests", "Git|version control", "APIs|REST|GraphQL", "Databases|SQL", "Code review", "System design"]
+preferred_skills: ["Cloud platforms|AWS|Azure|GCP", "CI/CD", "Containers|Docker", "Frontend frameworks|React|Angular|Vue", "Microservices", "Performance optimization"]
+tools: ["Git", "GitHub", "Docker", "PostgreSQL", "React", "Node.js", "Django|FastAPI|Flask", "Spring"]
+certifications: []
+responsibilities:
+  - Design and implement features and services
+  - Write tests and review code
+  - Debug and operate production systems
+  - Collaborate on design and technical decisions
+keywords: [software, code, API, backend, frontend, testing, design, scalability]
+evaluation_guidance:
+  - Language match matters when the posting names a primary language.
+  - Shipped projects and ownership are stronger evidence than course lists.

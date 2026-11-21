@@ -1,0 +1,26 @@
+id: cloud_engineer
+title: Cloud Engineer
+aliases: [cloud engineer, cloud infrastructure engineer, cloud architect, gcp engineer, aws engineer, azure engineer, cloud platform engineer]
+summary: >
+  Designs, builds and operates workloads on public cloud: networking, compute, storage, identity, cost and
+  security, mostly through infrastructure as code.
+context: >
+  Judged on secure, cost-aware, well-architected environments and migrations delivered. Depth in one provider
+  with transferable concepts is typical.
+levels:
+  junior: {min_years: 0, expectations: "Provisions resources with IaC templates; supports migrations."}
+  mid: {min_years: 3, expectations: "Designs VPC/IAM/landing zones, automates with IaC, runs migrations."}
+  senior: {min_years: 6, expectations: "Owns cloud architecture and governance, multi-account/project strategy, FinOps."}
+core_skills: ["Cloud platforms|AWS|Azure|GCP|Google Cloud", "Cloud networking|VPC|subnets", "Identity and access management|IAM", "Infrastructure as Code|Terraform|CloudFormation|Bicep", "Compute|virtual machines|serverless", "Storage|databases", "Security best practices", "Linux"]
+preferred_skills: ["Kubernetes|k8s|GKE|EKS|AKS", "Cost optimization|FinOps", "Cloud migration", "CI/CD", "Scripting|Python|Bash|PowerShell", "Monitoring|Cloud Monitoring|CloudWatch"]
+tools: ["Terraform", "Google Cloud", "AWS", "Azure", "Cloud Run", "Kubernetes|k8s", "GitHub Actions", "Cloud Build"]
+certifications: ["Google Professional Cloud Architect|Professional Cloud Architect", "AWS Certified Solutions Architect", "Azure Solutions Architect Expert|AZ-305", "Google Associate Cloud Engineer"]
+responsibilities:
+  - Design and build cloud environments following well-architected principles
+  - Automate provisioning with infrastructure as code
+  - Secure identities, networks and data
+  - Monitor cost and performance; lead migrations
+keywords: [cloud, VPC, IAM, landing zone, migration, serverless, infrastructure as code, cost]
+evaluation_guidance:
+  - Provider-specific requirements are must-haves only when the posting says so.
+  - IaC evidence is expected from mid level.

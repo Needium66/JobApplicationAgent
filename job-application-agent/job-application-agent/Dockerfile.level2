@@ -1,0 +1,17 @@
+# JobPilot Level 2: one image, six Cloud Run services (SERVICE_ROLE selects the role).
+FROM python:3.11-slim
+
+ENV PYTHONDONTWRITEBYTECODE=1 PYTHONUNBUFFERED=1
+WORKDIR /app
+
+COPY jobpilot/requirements.txt ./requirements.txt
+RUN pip install --no-cache-dir -r requirements.txt
+
+# job_app_agent is reused for deterministic scoring + DOCX rendering (Level 1 code, unchanged)
+COPY job_app_agent ./job_app_agent
+COPY jobpilot ./jobpilot
+
+RUN useradd --create-home appuser && chown -R appuser /app
+USER appuser
+
+CMD ["python", "-m", "jobpilot.services.main"]

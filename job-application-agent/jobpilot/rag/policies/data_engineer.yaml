@@ -1,0 +1,24 @@
+id: data_engineer
+title: Data Engineer
+aliases: [data engineer, analytics engineer, etl developer, big data engineer, data platform engineer]
+summary: >
+  Builds reliable data pipelines and platforms: ingestion, transformation, modelling and orchestration so
+  analysts and ML teams get trustworthy data.
+context: >
+  Judged on pipeline reliability, data quality, scalability and cost. SQL depth is non-negotiable.
+levels:
+  junior: {min_years: 0, expectations: "Builds and maintains pipelines with existing frameworks."}
+  mid: {min_years: 2, expectations: "Designs pipelines and data models, owns data quality."}
+  senior: {min_years: 5, expectations: "Designs the data platform and governance, sets standards."}
+core_skills: ["SQL", "Python|Scala", "ETL|ELT|data pipelines", "Data modeling", "Data warehouses|BigQuery|Snowflake|Redshift", "Orchestration|Airflow|Dagster", "Batch and streaming|Spark|Kafka", "Data quality"]
+preferred_skills: ["dbt", "Cloud platforms|GCP|AWS|Azure", "Data governance", "CI/CD", "Containers|Docker"]
+tools: ["BigQuery", "Snowflake", "Airflow", "dbt", "Spark", "Kafka", "Dataflow", "Pub/Sub"]
+certifications: ["Google Professional Data Engineer", "AWS Certified Data Engineer", "Databricks Certified Data Engineer"]
+responsibilities:
+  - Build and operate batch and streaming pipelines
+  - Model data for analytics and ML
+  - Ensure data quality, lineage and governance
+  - Optimise performance and cost
+keywords: [pipeline, ETL, warehouse, SQL, streaming, data model, orchestration, quality]
+evaluation_guidance:
+  - SQL and one pipeline/orchestration tool are expected at every level.

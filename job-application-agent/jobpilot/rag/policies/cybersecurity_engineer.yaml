@@ -1,0 +1,26 @@
+id: cybersecurity_engineer
+title: Cybersecurity Engineer
+aliases: [security engineer, cybersecurity engineer, information security engineer, infosec engineer, cloud security engineer, soc engineer]
+summary: >
+  Protects systems and data: designs security controls, detects and responds to threats, manages vulnerabilities
+  and identity, and keeps the organisation compliant.
+context: >
+  Spans prevention (hardening, IAM, network security), detection (SIEM, EDR) and response. Evidence of handling
+  real incidents or building controls matters more than certificates alone.
+levels:
+  junior: {min_years: 0, expectations: "Triages alerts, runs vulnerability scans, follows playbooks."}
+  mid: {min_years: 3, expectations: "Builds detections, leads investigations, hardens cloud and network controls."}
+  senior: {min_years: 6, expectations: "Designs security architecture, threat models, leads incident response and compliance programs."}
+core_skills: ["Network security|firewalls", "Identity and access management|IAM", "Vulnerability management", "Incident response", "SIEM|security monitoring", "Threat detection", "Linux|Windows security", "Security frameworks|NIST|ISO 27001|CIS"]
+preferred_skills: ["Cloud security", "Threat modeling", "Penetration testing", "Scripting|Python|PowerShell", "EDR", "Zero trust", "Digital forensics|memory forensics"]
+tools: ["Splunk", "Microsoft Sentinel", "CrowdStrike", "Wireshark", "Nessus", "Burp Suite", "Metasploit", "Volatility", "Security Command Center"]
+certifications: ["CISSP", "Security+|CompTIA Security+", "CEH", "OSCP", "CISM", "GIAC|GCIH|GCIA", "Google Professional Cloud Security Engineer"]
+responsibilities:
+  - Monitor, detect and respond to security incidents
+  - Run vulnerability management and remediation
+  - Design and enforce IAM, network and cloud security controls
+  - Support audits and compliance requirements
+keywords: [threat, vulnerability, incident, SIEM, IAM, compliance, hardening, detection, forensics]
+evaluation_guidance:
+  - Certifications support but do not replace hands-on incident or control-building evidence.
+  - Check whether the posting requires a security clearance; treat it as a must-have only when stated.

@@ -1,0 +1,27 @@
+id: devops_engineer
+title: DevOps Engineer
+aliases: [devops, devops engineer, platform engineer, build and release engineer, release engineer, ci/cd engineer, infrastructure engineer]
+summary: >
+  Builds and runs the delivery pipeline and the infrastructure software runs on: CI/CD, infrastructure as code,
+  containers, configuration management and observability, so teams ship safely and often.
+context: >
+  Sits between development and operations. Judged on deployment frequency, lead time, change-failure rate and
+  time to restore. Strong candidates show automation they built, not just tools they used.
+levels:
+  junior: {min_years: 0, expectations: "Maintains pipelines and IaC modules with guidance; scripting in Bash or Python."}
+  mid: {min_years: 2, expectations: "Owns pipelines and environments end to end; designs reusable IaC; on-call participation."}
+  senior: {min_years: 5, expectations: "Designs the delivery platform, sets standards, mentors, drives reliability and cost improvements."}
+core_skills: ["CI/CD", "Infrastructure as Code|IaC", "Linux", "Containers|Docker", "Kubernetes|k8s", "Scripting|Bash|Python", "Git", "Cloud platforms|AWS|Azure|GCP|Google Cloud"]
+preferred_skills: ["Helm", "GitOps|Argo CD|Flux", "Observability|Prometheus|Grafana", "Security scanning|DevSecOps", "Networking|DNS|load balancing", "Configuration management|Ansible|Chef|Puppet"]
+tools: ["Terraform", "Jenkins", "GitHub Actions", "GitLab CI", "Docker", "Kubernetes|k8s", "Helm", "Ansible", "Prometheus", "Grafana", "Argo CD"]
+certifications: ["CKA|Certified Kubernetes Administrator", "AWS Certified DevOps Engineer", "Google Professional Cloud DevOps Engineer", "HashiCorp Terraform Associate"]
+responsibilities:
+  - Build and maintain CI/CD pipelines with automated tests, security checks and safe rollouts
+  - Provision infrastructure as code and manage environments
+  - Containerize services and operate container platforms
+  - Implement monitoring, logging and alerting; participate in incident response
+keywords: [pipeline, deployment, automation, infrastructure as code, containers, release, rollback, blue-green, canary]
+evaluation_guidance:
+  - Credit automation the candidate built or owned; tool lists alone are weak evidence.
+  - Kubernetes or another container orchestrator plus one IaC tool are expected at mid level and above.
+  - Cloud-provider specifics are transferable; do not fail a candidate for AWS vs GCP alone.

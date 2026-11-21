@@ -1,0 +1,7 @@
+# gcloud builds submit --config cloudbuild.level2.yaml --substitutions=_IMAGE=REGION-docker.pkg.dev/PROJECT/jobpilot/jobpilot:TAG
+steps:
+  - name: gcr.io/cloud-builders/docker
+    args: ["build", "-f", "Dockerfile.level2", "-t", "${_IMAGE}", "."]
+images: ["${_IMAGE}"]
+options:
+  logging: CLOUD_LOGGING_ONLY

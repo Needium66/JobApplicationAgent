@@ -1,0 +1,26 @@
+id: product_manager
+title: Product Manager
+aliases: [product manager, pm, product owner, technical product manager, senior product manager, group product manager]
+summary: >
+  Decides what to build and why: discovers customer problems, sets strategy and roadmap, prioritises, and
+  works with engineering and design to ship outcomes that move business metrics.
+context: >
+  Judged on outcomes (adoption, retention, revenue), not features shipped. Evidence should show discovery,
+  prioritisation trade-offs and measurable results.
+levels:
+  junior: {min_years: 0, expectations: "Owns features within a product area; writes clear requirements."}
+  mid: {min_years: 3, expectations: "Owns a product area end to end, runs discovery, sets roadmap, measures outcomes."}
+  senior: {min_years: 6, expectations: "Sets product strategy across areas, influences leadership, mentors PMs."}
+core_skills: ["Product strategy", "Roadmapping|roadmap", "Prioritization", "Customer discovery|user research", "Requirements|PRD|user stories", "Stakeholder management", "Data-driven decisions|analytics|metrics", "Agile|Scrum"]
+preferred_skills: ["A/B testing|experimentation", "Go-to-market|GTM", "Pricing", "SQL", "Technical fluency|APIs", "OKRs"]
+tools: ["Jira", "Confluence", "Figma", "Amplitude", "Mixpanel", "Google Analytics", "SQL", "Productboard"]
+certifications: ["CSPO|Certified Scrum Product Owner", "Pragmatic Institute", "AIPMM"]
+responsibilities:
+  - Discover and validate customer problems
+  - Define strategy, roadmap and success metrics
+  - Prioritise and write requirements with engineering and design
+  - Launch, measure and iterate
+keywords: [roadmap, discovery, prioritization, stakeholders, metrics, launch, customers, outcomes]
+evaluation_guidance:
+  - Weight measurable outcomes over lists of features shipped.
+  - Technical PM roles may require engineering background; treat as must-have only when stated.
