@@ -6,8 +6,8 @@
   Safe to re-run: existing resources are updated.
 
 .EXAMPLE
-  .\scripts\level2\deploy_level2.ps1 -ProjectId corded-fact-466806-e0 -Users you@gmail.com
-  .\scripts\level2\deploy_level2.ps1 -ProjectId corded-fact-466806-e0 -SkipBuild -Users you@gmail.com,friend@gmail.com
+  .\scripts\level2\deploy_level2.ps1 -ProjectId $projectid  -Users you@gmail.com
+  .\scripts\level2\deploy_level2.ps1 -ProjectId $projectid -SkipBuild -Users you@gmail.com,friend@gmail.com
 #>
 param(
     [string]$ProjectId = $env:PROJECT_ID,

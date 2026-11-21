@@ -7,8 +7,8 @@
   the IAP service agent and (optionally) a Model Armor template for the Defense Mesh.
 
 .EXAMPLE
-  .\scripts\level2\setup_level2.ps1 -ProjectId corded-fact-466806-e0
-  .\scripts\level2\setup_level2.ps1 -ProjectId corded-fact-466806-e0 -EnableModelArmor
+  .\scripts\level2\setup_level2.ps1 -ProjectId $projectid
+  .\scripts\level2\setup_level2.ps1 -ProjectId $projectid -EnableModelArmor
 #>
 param(
     [string]$ProjectId = $env:PROJECT_ID,
